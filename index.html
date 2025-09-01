@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Centro Esotérico</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Centro Esotérico – Lectura de Cartas y Asesoría</title>
+  <meta name="description" content="Lectura de cartas, palma de la mano, amarres y asesoría espiritual. Atención presencial y a distancia. Bogotá y todo Colombia." />
+  <style>
+    /* Estilo limpio y responsive en un solo archivo */
+    :root { --max:1100px; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6;color:#111;background:#fafafa}
+    header{padding:48px 16px;text-align:center;background:#fdfdfd}
+    .wrap{max-width:var(--max);margin:0 auto}
+    h1{margin:0 0 8px;font-size:clamp(28px,4vw,40px)}
+    p.lead{margin:0 auto 14px;color:#444;max-width:800px}
+    .cta{display:inline-block;margin:6px;padding:12px 18px;border:1px solid #111;border-radius:10px;text-decoration:none;color:#111}
+    .cta:hover{background:#111;color:#fff}
+    nav{position:sticky;top:0;background:#fff;border-block:1px solid #eee;z-index:2}
+    nav ul{margin:0;padding:8px 12px;display:flex;gap:16px;list-style:none;justify-content:center;flex-wrap:wrap}
+    main{max-width:var(--max);margin:24px auto;padding:0 16px}
+    h2{margin:28px 0 12px}
+    .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .card{border:1px solid #eee;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.05)}
+    .card img{display:block;width:100%;height:220px;object-fit:cover}
+    .card .p{padding:12px}
+    footer{margin-top:40px;padding:20px 16px;background:#111;color:#fff;text-align:center}
+    small{color:#ccc}
+  </style>
 </head>
 <body>
-  <h1>Bienvenido al Centro Esotérico</h1>
-  <p>Esta es una prueba para confirmar que tu página funciona.</p>
-  <img src="buda.jpeg" alt="Imagen de Buda" width="300">
-</body>
-</html>
+  <header>
+    <div class="wrap">
+      <h1>Centro Esotérico</h1>
+      <p class="lead">Lectura de Cartas · Palma de la Mano · Asesoría Espiritual · Trabajos a Distancia</p>
+      <!-- Llamadas y WhatsApp -->
+      <a class="cta" href="tel:+573143786595">Llamar 314 378 6595</a>
+      <a class="cta" href="tel:+573133722969">Llamar 313 372 2969</a>
+      <a class="cta" href="https://wa.me/573133722969" target="_blank" rel="noopener">WhatsApp 313 372 2969</a>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <div class="grid">
+        <div class="card"><div class="p"><strong>Lectura de Cartas</strong><br>Sesiones personalizadas, en persona o a distancia.</div></div>
+        <div class="card"><div class="p"><strong>Palma de la Mano</strong><br>Interpretación y guía para decisiones importantes.</div></div>
+        <div class="card"><div class="p"><strong>Armonización Energética</strong><br>Equilibrio y bienestar espiritual.</div></div>
+        <div class="card"><div class="p"><strong>Consejería de Pareja</strong><br>Orientación en temas de amor y relaciones.</div></div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <h2>Galería</h2>
+      <div class="grid">
+        <figure class="card"><img src="buda.jpeg" alt="Buda y elementos místicos"><figcaption class="p">Espacio místico</figcaption></figure>
+        <figure class="card"><img src="fachada.jpeg" alt="Fachada del centro esotérico"><figcaption class="p">Fachada</figcaption></figure>
+        <figure class="card"><img src="consultorio.jpeg" alt="Consultorio de atención"><figcaption class="p">Consultorio</figcaption></figure>
+        <figure class="card"><img src="sala.jpeg" alt="Sala de espera"><figcaption class="p">Sala de espera</figcaption></figure>
+        <figure class="card"><img src="almacen.jpeg" alt="Almacén de velas y esencias"><figcaption class="p">Almacén</figcaption></figure>
+        <figure class="card"><img src="velas.jpeg" alt="Velas y esencias"><figcaption class="p">Velas y esencias</figcaption></figure>
+      </div>
+      <p><small>Los nombres de archivo distinguen mayúsculas/minúsculas.
