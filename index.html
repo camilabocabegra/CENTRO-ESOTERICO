@@ -66,23 +66,89 @@
         <figure class="card"><img src=
         <figure class="card"><img src="consultorio.jpeg" alt="Consultorio de atención"><figcaption class="p">Consultorio</figcaption></figure>
         <figure class="card"><img src="sala.jpeg" alt="Sala de espera"><figcaption class="p">Sala de espera</figcaption></figure>
-        <!-- Borra o comenta este bloque -->
-<figure class="card">
-  <img src="fachada.jpeg" alt="Fachada del centro esotérico">
-  <figcaption>Fachada</figcaption>
-</figure>
+      
+/* --- Reset útil --- */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+img { max-width: 100%; height: auto; display: block; }
 
-<!-- ELIMINAR ESTE BLOQUE -->
-<figure class="card">
-  <img src="fachada.jpeg" alt="Fachada del centro esotérico">
-  <figcaption class="p">Fachada</figcaption>
-</figure>
+/* --- Contenedor principal --- */
+main { width: min(1100px, 92%); margin: 24px auto; }
 
-<!-- ELIMINAR ESTE BLOQUE -->
-<figure class="card">
-  <img src="velas.jpeg" alt="Almacén de velas y esencias">
-  <figcaption class="p">Velas y esencias</figcaption>
-</figure>
+/* --- Tarjetas de la galería en una cuadrícula ordenada --- */
+#galeria .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* --- Tarjeta --- */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+/* --- Miniatura (todas con la misma altura) --- */
+.card img {
+  width: 100%;
+  height: 170px;          /* ajusta a tu gusto: 150–200px */
+  object-fit: cover;      /* recorte elegante sin deformar */
+}
+
+/* --- Título de la tarjeta --- */
+.card .p, .card figcaption {
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* --- Opcional: separaciones de sección --- */
+section { margin-bottom: 32px; }
+h2 { margin: 0 0 12px 0; font-size: 22px; }/* --- Reset útil --- */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+img { max-width: 100%; height: auto; display: block; }
+
+/* --- Contenedor principal --- */
+main { width: min(1100px, 92%); margin: 24px auto; }
+
+/* --- Tarjetas de la galería en una cuadrícula ordenada --- */
+#galeria .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* --- Tarjeta --- */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+/* --- Miniatura (todas con la misma altura) --- */
+.card img {
+  width: 100%;
+  height: 170px;          /* ajusta a tu gusto: 150–200px */
+  object-fit: cover;      /* recorte elegante sin deformar */
+}
+
+/* --- Título de la tarjeta --- */
+.card .p, .card figcaption {
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* --- Opcional: separaciones de sección --- */
+section { margin-bottom: 32px; }
+h2 { margin: 0 0 12px 0; font-size: 22px; }
+
       </div> <section id="contacto">
   <h2>Contacto</h2>
   <p>Escríbenos directamente a nuestro correo:</p>
